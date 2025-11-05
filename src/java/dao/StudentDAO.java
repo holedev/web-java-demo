@@ -12,11 +12,14 @@ import java.util.List;
 import model.Student;
 
 public interface StudentDAO {
-    List<Student> findAll();
+    List<Student> findAll(int page, int pageSize);
+    List<Student> searchByName(String keyword, int page, int pageSize);
     Student findById(int id);
     void insert(Student s);
     void update(Student s);
     void delete(int id);
     
+    int countAll();
+    int countByName(String keyword);
     public List<Student> findStudentsWithoutClass();
 }
