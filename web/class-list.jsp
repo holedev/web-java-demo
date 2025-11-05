@@ -36,8 +36,8 @@
         <tr>
             <td scope="row"><%= s.getId()%></td>
             <td><%= s.getName()%></td>
-            <td class="flex">
-                <form action="ClassServlet" method="post">
+            <td>
+                <form class="d-inline" action="ClassServlet" method="post" onsubmit="return confirm('Are you sure you want to delete this class?');">
                     <input type="hidden" name="action" value="delete"/>
                     <input type="hidden" name="id" value="<%= s.getId()%>"/>
                     <button type="submit" class="btn btn-danger">Delete</button>

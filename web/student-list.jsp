@@ -33,7 +33,7 @@
             <td><%= s.getGpa()%></td>
             <td><%= s.getClass_id()%></td>
             <td>
-                <form action="StudentServlet" method="post" style="margin:0;">
+                <form action="StudentServlet" method="post" style="margin:0;" onsubmit="return confirm('Are you sure you want to delete this student?');">
                     <input type="hidden" name="action" value="delete"/>
                     <input type="hidden" name="id" value="<%= s.getId()%>"/>
                     <input type="submit" value="Delete" class="btn btn-danger"/>

@@ -20,7 +20,7 @@
         <input type="submit" value="Save" class="btn btn-primary mt-3"/>
     </form>
 
-    <a href="StudentServlet" class="btn btn-secondary mt-2">? Back to List</a>
+    <a href="StudentServlet" class="btn btn-secondary mt-2">Back to List</a>
 </div>
 
 <%@include file="footer.jsp" %>

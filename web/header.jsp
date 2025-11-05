@@ -15,7 +15,7 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
   <div class="container-fluid">
-    <a class="navbar-brand fw-bold" href="/">Student Management</a>
+    <a class="navbar-brand fw-bold" href="/TienIchDaoTao_1">Student Management</a>
     <div class="navbar-nav">
       <a class="nav-link" href="ClassServlet">Class</a>
       <a class="nav-link" href="StudentServlet">Student</a>
